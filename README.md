@@ -14,7 +14,7 @@ This request must contain a key named "file" with the csv file as the value to i
 
 The last request gets all the records saved in the database.
 This is the method's url.
-	http://localhost:3000/api/csv/tutorials
+	http://localhost:3000/api/csv/getall
 
 Both methods have a json response.
 
