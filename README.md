@@ -1,8 +1,10 @@
 Hi There!
 
-I used Express and SQLITE3 to build this code challenge.
+I used Express, Jest and SQLITE3 to build this code challenge.
 In the directory called "documentation" i put examples from csv files and the Postman collection to test.
 Before you start reviewing the code, you must run "npm install" to download all dependencies.
+
+Run the test with "npm test".
 
 I have made 2 requests on the API.
 The first loads the records from the csv file and inserts them into the local SQLITE database.
