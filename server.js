@@ -18,7 +18,7 @@ initRoutes(app);
 
 const db = new sqlite3.Database('./database/database.db', (err) => {
     if (err) {
-        //console.error("Erro opening database " + err.message);
+        console.error("Erro opening database " + err.message);
     } else {
 
         db.run('CREATE TABLE vehicles( \
@@ -35,7 +35,7 @@ const db = new sqlite3.Database('./database/database.db', (err) => {
             UPDATEDATE NVARCHAR(100)\
         )', (err) => {
             if (err) {
-                //console.log("Table already exists.");
+                console.log("Table already exists.");
             }
             // let insert = 'INSERT INTO employees (last_name, first_name, title, address, country_code) VALUES (?,?,?,?,?)';
             // db.run(insert, ["Chandan", "Praveen", "SE", "Address 1", 1]);
@@ -45,4 +45,4 @@ const db = new sqlite3.Database('./database/database.db', (err) => {
     }
 });
 
-module.exports = app.listen(apiPort);
+module.exports = app.listen(apiPort,()=>{console.log("Server is running at port 3000")});
