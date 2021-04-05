@@ -15,6 +15,9 @@ This is the method's url.
 	http://localhost:3000/api/csv/tutorials
 
 Both methods have a json response.
+
+One last thing, if you want to delete all records from database you must delete the file "database/database.db"
+and restart your server.
 	
 
 Thanks for your time
