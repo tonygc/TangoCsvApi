@@ -24,10 +24,11 @@ const upload = async (req, res) => {
       .on("end", () => {
         // Tutorial.bulkCreate(tutorials)
         //   .then(() => {
-        //     res.status(200).send({
-        //       message:
-        //         "Uploaded the file successfully: " + req.file.originalname,
-        //     });
+            res.status(200).send({
+                data: tutorials,
+                message:
+                "Uploaded the file successfully: " + req.file.originalname,
+            });
         //   })
         //   .catch((error) => {
         //     res.status(500).send({
@@ -45,6 +46,10 @@ const upload = async (req, res) => {
 };
 
 const getTutorials = (req, res) => {
+    res.status(200).send({
+        message:
+          "Uploaded the file successfully: " + req.file.originalname,
+      });
 //   Tutorial.findAll()
 //     .then((data) => {
 //       res.send(data);

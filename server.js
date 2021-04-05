@@ -5,7 +5,7 @@ const app = express()
 const initRoutes = require("./routers/vehicleRouter");
 const apiPort = 3000
 
-global.__basedir = __dirname + "/..";
+global.__basedir = __dirname + "/";
 
 app.use(express.urlencoded({ extended: true }));
 //app.use(bodyParser.urlencoded({ extended: true }))
