@@ -1,0 +1,27 @@
+{
+	"info": {
+		"_postman_id": "a1e5a765-8d67-452a-bb69-09ec27dcbd30",
+		"name": "apiCSVTango",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllRecords",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "uploadCSV",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
